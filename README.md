@@ -28,16 +28,16 @@ _Untuk perintah yang dibungkus `< >` maka perintah tersebut diganti sesuai instr
   cd <NIM>
   ```
   *(Untuk pertemuan berikutnya, cukup jalankan `cd <NIM>`)*
-- Buat folder baru untuk setiap tugas praktikum dengan format `Pertemuan_<no.pertemuan>`:
+- Buat folder baru untuk setiap tugas praktikum dengan format `Praktikum_<no.pertemuan>`:
   ```bash
-  mkdir Pertemuan_<no.pertemuan>
+  mkdir Praktikum_<no.pertemuan>
   ```
-  *Contoh:* `mkdir Pertemuan_1`
+  *Contoh:* `mkdir Praktikum_1`
 - Masuk ke folder pertemuan tersebut:
   ```bash
-  cd Pertemuan_<no.pertemuan>
+  cd Praktikum_<no.pertemuan>
   ```
-  *Contoh:* `cd Pertemuan_1`
+  *Contoh:* `cd Praktikum_1`
 - Simpan file query `.sql` untuk masing-masing nomor soal di dalam folder pertemuan tersebut:
   - Penamaan file: `no_1.sql`, `no_2.sql`, `no_3.sql`, dst.
 
@@ -46,11 +46,11 @@ _Untuk perintah yang dibungkus `< >` maka perintah tersebut diganti sesuai instr
 LAB-BASDAT-11-2026/
 ├── README.md
 └── <NIM>/
-    ├── Pertemuan_1/
+    ├── Praktikum_1/
     │   ├── no_1.sql
     │   ├── no_2.sql
     │   └── no_3.sql
-    └── Pertemuan_2/
+    └── Praktikum_2/
         ├── no_1.sql
         ├── no_2.sql
         └── no_3.sql
@@ -59,7 +59,7 @@ LAB-BASDAT-11-2026/
 - Setelah semua tugas diselesaikan dan telah diasistensikan, lakukan langkah berikut di terminal (pastikan perubahan tersimpan):
   ```bash
   git add .
-  git commit -m "Submit Tugas Pertemuan <no.pertemuan> - <NIM>"
+  git commit -m "Submit Tugas Praktikum <no.pertemuan> - <NIM>"
   git push origin <NIM>
   ```
 - Setelah push berhasil, buka repository hasil fork kalian di GitHub dan lakukan **Pull Request** ke repositori ini (`zaynabzhaa10/LAB-BASDAT-11-2026`).
