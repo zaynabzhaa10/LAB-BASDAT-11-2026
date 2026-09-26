@@ -8,7 +8,7 @@ _Untuk perintah yang dibungkus `< >` maka perintah tersebut diganti sesuai instr
 
 - Silakan fork repositori ini: [zaynabzhaa10/LAB-BASDAT-11-2026](https://github.com/zaynabzhaa10/LAB-BASDAT-11-2026)
 - Pada halaman fork, pastikan untuk mencentang **'Copy the `main` branch only'**  
-  ![sedikit catatan fork](https://i.ibb.co/HDtshRk2/Screenshot-2025-05-19-190003.png)
+  ![sedikit catatan fork](assets/catatan-fork.png)
 - Lakukan clone terhadap repositori hasil fork ke komputer lokal kalian:
   ```bash
   git clone https://github.com/<username-github-kalian>/LAB-BASDAT-11-2026.git
@@ -65,8 +65,8 @@ LAB-BASDAT-11-2026/
 - Setelah push berhasil, buka repository hasil fork kalian di GitHub dan lakukan **Pull Request** ke repositori ini (`zaynabzhaa10/LAB-BASDAT-11-2026`).
 - Pastikan konfigurasi branch pada Pull Request diarahkan sebagai berikut:
   - **base repository**: `zaynabzhaa10/LAB-BASDAT-11-2026`
-  - **base**: `main`
+  - **base**: `<NIM>`
   - **head repository**: `<username-kalian>/LAB-BASDAT-11-2026`
-  - **compare**: `<NIM>`  
-  ![panduan pull request](https://i.ibb.co.com/6Rp9ftrP/Whats-App-Image-2025-04-06-at-21-17-15.jpg)
+  - **compare**: `<NIM>` *(pastikan branch base dan compare bernilai sama)*  
+  ![panduan pull request](assets/panduan-pull-request.png)
 - Apabila terdapat kesulitan atau kendala, silakan menghubungi asistennya.
