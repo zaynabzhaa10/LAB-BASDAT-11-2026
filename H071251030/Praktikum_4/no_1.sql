@@ -1,0 +1,1 @@
+select customernumber, sum(amount) as "Total nominal", count(distinct checknumber) as "Total transaksi unik", max(amount) as "Nominal tertinggi" from classicmodels.payments group by customernumber having count(distinct checknumber) > 4 and round(avg(amount), 2) > 20000;

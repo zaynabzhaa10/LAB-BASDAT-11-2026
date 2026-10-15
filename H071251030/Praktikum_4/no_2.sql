@@ -1,0 +1,1 @@
+select customernumber, sum(amount) as total_dana from classicmodels.payments group by customernumber having sum(amount) > 80000 order by sum(amount) desc;

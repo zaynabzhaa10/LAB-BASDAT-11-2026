@@ -1,0 +1,1 @@
+select productcode, sum(quantityordered), sum(priceeach * quantityordered ) as estimasi_pendapatan_kotor, round(avg(priceeach), 2), max(priceeach) - min(priceeach ) as volatilitas_harga from classicmodels.orderdetails where quantityordered > 20 group by productcode having sum(priceeach * quantityordered ) > 50000 order by sum(priceeach * quantityordered ) desc;  

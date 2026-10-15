@@ -1,0 +1,1 @@
+select p.productline, count(*) as total_produk, round(avg(p.msrp), 2) as rerata_harga, string_agg(p.productname, ', ' order by p.productname ) as nama_gabungan_produk from classicmodels.products p group by p.productline having count(*) > 10;

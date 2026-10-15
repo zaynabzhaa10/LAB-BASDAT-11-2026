@@ -1,0 +1,1 @@
+select ordernumber, orderdate, shippeddate, orderdate + interval '10 days' as "Estimasi Kirim", coalesce(shippeddate, orderdate + interval '10 days') as "Tanggal Aktual", age(shippeddate, orderdate) as "Selisih Waktu" from classicmodels.orders where comments ilike '%customer%' and date_part('month', orderdate) between '10' and '12' and ordernumber % 2 = 1 order by orderdate desc;

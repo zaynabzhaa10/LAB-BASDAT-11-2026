@@ -1,0 +1,1 @@
+select customernumber, customername, country, concat(contactfirstname, ' ', contactlastname) as "Nama Kontak", creditlimit, creditlimit - 10000 as "Selisih Kredit" from classicmodels.customers where (country = 'USA' or country = 'Canada' or country = 'France') and creditlimit > 30000 order by creditlimit desc;

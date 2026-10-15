@@ -1,0 +1,1 @@
+select c.customernumber from classicmodels.customers c where c.creditlimit > 80000 intersect select o.customernumber from classicmodels.orders o where o.status = 'Cancelled' or o.status = 'On Hold' except select p.customernumber from classicmodels.payments p group by p.customernumber having sum(amount) >= 100000;

@@ -1,0 +1,1 @@
+select ordernumber, upper(productcode) as "Kode Produk", quantityordered, priceeach from classicmodels.orderdetails where (quantityordered BETWEEN 20 and 50 or priceeach < 30) and left(productcode, 3) = 'S18';

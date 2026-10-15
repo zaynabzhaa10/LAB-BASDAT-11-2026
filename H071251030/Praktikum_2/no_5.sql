@@ -1,0 +1,1 @@
+select DISTINCT country from customers order by country limit 5 offset 5;

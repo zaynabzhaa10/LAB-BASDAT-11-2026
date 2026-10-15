@@ -1,0 +1,1 @@
+select employeenumber from classicmodels.employees where reportsto is not null except select employeenumber from classicmodels.employees where jobtitle like '%VP%' or jobtitle like '%President%';

@@ -1,0 +1,1 @@
+select productcode, productname, buyprice, msrp, greatest(buyprice, msrp) as "Harga Tertinggi", least(buyprice, msrp) as "Harga Terendah" from classicmodels.products where productname ilike '%car%';

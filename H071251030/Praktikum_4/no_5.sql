@@ -1,0 +1,1 @@
+select productcode, priceeach, count(quantityordered) as total_unit_terjual, round(avg(priceeach * quantityordered), 2) as rerata_harga_jual from classicmodels.orderdetails where priceeach > 100 group by productcode, priceeach, quantityordered  having quantityordered > 50 order by quantityordered desc; 
