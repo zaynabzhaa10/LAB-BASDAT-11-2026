@@ -1,0 +1,1 @@
+select e.firstname || ' ' || e.lastname as nama_sales, e.jobtitle, c.customername from customers c full outer join employees e on c.salesrepemployeenumber = e.employeenumber where e.jobtitle = 'Sales Rep' order by e.firstname limit 10

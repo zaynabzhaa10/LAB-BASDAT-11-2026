@@ -1,0 +1,1 @@
+select c.customername, sum(p.amount) as total_payment, max(p.amount) as max_single_payment from customers c join payments p on c.customernumber = p.customernumber group by c.customername having sum(p.amount) > 50000 order by total_payment desc

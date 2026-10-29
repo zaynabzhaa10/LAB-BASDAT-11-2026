@@ -1,0 +1,1 @@
+select c.contactfirstname, c.customername, o.officecode, e.firstname || ' ' || e.lastname as sales_rep_name from customers c join employees e on c.salesrepemployeenumber = e.employeenumber join offices o on o.officecode = e.officecode where c.contactfirstname like 'A%' and not e.officecode = 'NYC' order by c.customername
